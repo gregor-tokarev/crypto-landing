@@ -1,0 +1,33 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 25px 0;
+  background-color: $bg-30;
+
+  &__inner {
+    @include container;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__link {
+    margin-left: 4%;
+
+    a {
+      font-weight: 500;
+      color: $text;
+      text-decoration: none;
+      transition: color 0.4s;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}

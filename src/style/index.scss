@@ -1,0 +1,12 @@
+@import "helpers/index";
+
+body {
+  height: 2000px;
+  background-color: $bg;
+}
+
+//blocks
+@import "../blocks/header/header";
+@import "../blocks/hero/hero";
+@import "../blocks/title/title";
+@import "../blocks/timeline/timeline";

@@ -1,0 +1,82 @@
+.timeline {
+  position: relative;
+
+  &__inner {
+    @include container;
+  }
+
+  &__cards {
+    padding-top: 310px;
+  }
+
+  &__hider {
+    height: 100%;
+  }
+
+  &__road {
+    position: absolute;
+    top: 485px;
+    left: 50%;
+    width: 750px;
+    overflow: hidden;
+    transform: translateX(-50%);
+  }
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  padding: 80px 60px 80px 40px;
+  background: radial-gradient(123.12% 427.27% at -3.17% 0%, rgba(170, 255, 255, 0.14) 3.43%, rgba(170, 255, 255, 0) 100%);
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(39px);
+  border-radius: 39px;
+
+  &--2 {
+    margin-left: auto;
+
+    .card__ball {
+      top: -50px;
+      left: -50px;
+      transform: translate(-50%, -50%);
+
+      @include green-radial-gradient;
+    }
+
+    .card__year {
+      top: -50px;
+      left: -50px;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    color: $text;
+  }
+
+  &__ball {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 500px;
+    height: 500px;
+    transform: translate(50%, -50%);
+
+    @include purple-radial-gradient;
+  }
+
+  &__year {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: 20;
+    font-size: 144px;
+    font-weight: bold;
+    line-height: 132.4%;
+    color: rgba(171, 171, 171, 0.3);
+    text-align: center;
+    transform: translate(50%, -50%);
+  }
+}
