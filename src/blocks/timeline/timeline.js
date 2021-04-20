@@ -5,9 +5,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
-    const ball = card.querySelector('.card__ball');
-    const year = card.querySelector('.card__year');
-    console.log(ball, year);
     const tl = gsap.timeline();
     if (!card.classList.contains('card--2')) {
         tl.from(card, {
@@ -30,7 +27,8 @@ cards.forEach(card => {
     ScrollTrigger.create({
         animation: tl,
         trigger: card,
-        toggleActions: 'play none none reverse',
-        start: 'bottom 95%'
+        markers: true,
+        toggleActions: 'play none none none',
+        start: 'bottom 40%'
     });
 });
