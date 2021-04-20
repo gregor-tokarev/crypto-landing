@@ -2,18 +2,6 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MorphSVGPlugin)
-
-gsap.from('.timeline__hider svg', {
-    morphSVG: '<svg></svg>',
-    scrollTrigger: {
-        trigger: '.timeline__road',
-        start: 'top center',
-        end: 'bottom bottom',
-        markers: true,
-        scrub: true
-    }
-})
 
 const cards = document.querySelectorAll('.card');
 cards.forEach(card => {
@@ -42,7 +30,6 @@ cards.forEach(card => {
     ScrollTrigger.create({
         animation: tl,
         trigger: card,
-        markers: true,
         toggleActions: 'play none none reverse',
         start: 'bottom 95%'
     });

@@ -1,0 +1,38 @@
+.slider {
+  margin-bottom: 200px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    max-width: 520px;
+    margin-bottom: 105px;
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__icon {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+
+  &__body {
+    margin-right: 40px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 115.9%;
+    color: #f1e7e7;
+    text-align: center;
+  }
+}

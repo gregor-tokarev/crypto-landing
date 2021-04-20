@@ -1,5 +1,6 @@
 import '../blocks/timeline/timeline'
 import '../../.wfLayout/webpCheck';
+import '../blocks/slider/slider'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
