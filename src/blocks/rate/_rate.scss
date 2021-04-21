@@ -1,0 +1,5 @@
+.rate {
+  &__inner {
+    @include container;
+  }
+}

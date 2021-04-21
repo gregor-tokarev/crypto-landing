@@ -1,0 +1,61 @@
+.perspectives {
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: 200px;
+  }
+
+  &__item {
+    //display: flex;
+  }
+
+  &__number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+  }
+
+  &__number-text {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 152px;
+    height: 152px;
+    font-size: 67px;
+    color: $text;
+    background-color: $bg;
+    border-radius: 50%;
+  }
+
+  &__number-border {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    z-index: 1;
+    content: '';
+    border-radius: 50%;
+
+    @include secondary-linear-gradient;
+  }
+
+  &__name {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 132.4%;
+    color: $text;
+  }
+
+  &__text {
+    color: $label;
+  }
+}

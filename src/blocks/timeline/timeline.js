@@ -27,7 +27,6 @@ cards.forEach(card => {
     ScrollTrigger.create({
         animation: tl,
         trigger: card,
-        markers: true,
         toggleActions: 'play none none none',
         start: 'bottom 40%'
     });

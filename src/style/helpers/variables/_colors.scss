@@ -4,6 +4,8 @@ $bg: #0a1218;
 $label: #ababab;
 $bg-30: rgba(0, 0, 0, 0.7);
 
+$secondary-linear-gradient: 'linear-gradient(0deg, #89008C, #0026AD)';
+
 @mixin green-radial-gradient {
   background: radial-gradient(60.8% 60.8% at 50% 50%, rgba(0, 140, 112, 0.25) 0%, rgba(0, 140, 112, 0.157127) 51.04%, rgba(0, 10, 18, 0) 91.13%);
   filter: blur(20px);
@@ -16,4 +18,8 @@ $bg-30: rgba(0, 0, 0, 0.7);
 
 @mixin main-linear-gradient {
   background: linear-gradient(90deg, #a250e2 7.64%, #008c70 89.89%);
+}
+
+@mixin secondary-linear-gradient {
+  background: #{$secondary-linear-gradient};
 }

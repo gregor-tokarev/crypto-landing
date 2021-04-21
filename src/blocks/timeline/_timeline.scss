@@ -1,5 +1,6 @@
 .timeline {
   position: relative;
+  margin-bottom: 150px;
 
   &__inner {
     @include container;
