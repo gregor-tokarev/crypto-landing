@@ -2,4 +2,8 @@
   &__inner {
     @include container;
   }
+
+  &__title {
+    margin-bottom: 150px;
+  }
 }

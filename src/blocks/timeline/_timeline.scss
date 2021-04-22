@@ -32,6 +32,12 @@
   backdrop-filter: blur(39px);
   border-radius: 39px;
 
+  &__icon {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+  }
+
   &--2 {
     margin-left: auto;
 
