@@ -1,9 +1,74 @@
 .rate {
+  color: $text;
+
   &__inner {
     @include container;
   }
 
   &__title {
     margin-bottom: 150px;
+  }
+
+  &__stage {
+    position: relative;
+
+    img {
+      user-select: none;
+    }
+  }
+
+  &__more {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 77.9%;
+  }
+
+  &__description {
+    max-width: 370px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.9%;
+    color: $label;
+  }
+
+  &__target {
+    color: $accent;
+  }
+
+  &__currency {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__bitcoin {
+    top: -55px;
+    left: 51%;
+    transform: translateX(-50%);
+  }
+
+  &__ethereum {
+    top: 40px;
+    left: 310px;
+  }
+
+  &__stable {
+    top: 160px;
+    right: 175px;
+  }
+
+  &__litecoin {
+    top: 60px;
+    right: 305px;
+  }
+
+  &__bnb {
+    top: 150px;
+    left: 175px;
   }
 }

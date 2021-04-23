@@ -3,7 +3,31 @@
         <h1 class="rate__title title base-animation">Топ 5 валют</h1>
 
         <div class="rate__body">
-            <img src="../../images/stage.png" alt="" class="rage__stage">
+            <div class="rate__more">
+                <div class="rate__price">
+                    <span title="Курс на данный момент времени" class="rate__number"></span>
+                    <span class="rate__target">USD$</span>
+                </div>
+                <p class="rate__description"></p>
+            </div>
+            <div class="rate__stage">
+                <div data-currency="Bitcoin" class="rate__currency rate__bitcoin">
+                    <%- include('../../images/bitcoin-icon.svg') %>
+                </div>
+                <div data-currency="Ethereum" class="rate__currency rate__ethereum">
+                    <%- include('../../images/ethereum-icon.svg') %>
+                </div>
+                <div data-currency="Binance Coin" class="rate__currency rate__bnb">
+                    <%- include('../../images/bnb-icon.svg') %>
+                </div>
+                <div data-currency="Litecoin" class="rate__currency rate__litecoin">
+                    <%- include('../../images/litecoin-icon.svg') %>
+                </div>
+                <div data-currency="stable" class="rate__currency rate__stable">
+                    <%- include('../../images/stable-icon.svg') %>
+                </div>
+                <img src="../../images/stage.png" alt="stage">
+            </div>
         </div>
     </div>
 </section>
