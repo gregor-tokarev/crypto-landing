@@ -1,5 +1,6 @@
 <svg width="130" height="131" viewBox="0 0 130 131" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="65" cy="65.5217" r="65" fill="url(#paint0_radial)"/>
+  <path d="M49 47.1007C49 56.2412 56.1787 63.6796 65 63.6796C73.8213 63.6796 81 56.2412 81 47.1007C81 37.9601 73.8213 30.5217 65 30.5217C56.1787 30.5217 49 37.9601 49 47.1007ZM93.4444 100.522H97V96.8375C97 82.6202 85.832 71.048 72.1111 71.048H57.8889C44.1644 71.048 33 82.6202 33 96.8375V100.522H93.4444Z" fill="white"/>
   <defs>
     <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(65 65.5217) rotate(90) scale(65)">
       <stop offset="0.1875" stop-color="#731DB7" stop-opacity="0.85"/>

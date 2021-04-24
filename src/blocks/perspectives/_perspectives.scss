@@ -1,10 +1,12 @@
 .perspectives {
+  margin-bottom: 70px;
+
   &__inner {
     @include container;
   }
 
   &__title {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   &__list {

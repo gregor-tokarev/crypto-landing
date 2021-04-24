@@ -1,15 +1,15 @@
-import {gsap} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const animation = gsap.to('.slider__slider', {
-    xPercent: -100,
-})
+    xPercent: -200
+});
 
 ScrollTrigger.create({
     animation,
     trigger: '.slider',
-    scrub: true,
+    scrub: 0.2,
     toggleActions: 'play none none reverse',
     pin: '.slider',
     start: 'center center'
-})
+});

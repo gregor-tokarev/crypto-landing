@@ -1,4 +1,4 @@
-<section class="slider">
+<section id="slider" class="slider">
     <div class="slider__inner">
         <h1 class="title base-animation slider__title">
             Как работает
@@ -17,12 +17,52 @@
                    <%- include('../../images/arrow-right.svg')%>
                </div>
            </li>
-           <li class="slider__item">
+           <li style="min-width: 250px;" class="slider__item">
                <div class="slider__body">
                    <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
+                       <%- include('../../images/transaction.svg')%>
                    </div>
-                   <div class="slider__text">Пользователь</div>
+                   <div class="slider__text">
+                       Неподверженные транзакции, которые образуют блок транзакций
+                   </div>
+               </div>
+               <div class="slider__arrow">
+                   <%- include('../../images/arrow-right.svg')%>
+               </div>
+           </li>
+           <li style="min-width: 270px;" class="slider__item">
+               <div class="slider__body">
+                   <div class="slider__icon">
+                       <%- include('../../images/math.svg')%>
+                   </div>
+                   <div class="slider__text">
+                       Достижение косенсуса Proof-of-work с помощью мощности хеширования
+                   </div>
+               </div>
+               <div class="slider__arrow">
+                   <%- include('../../images/arrow-right.svg')%>
+               </div>
+           </li>
+           <li style="min-width: 180px;" class="slider__item">
+               <div class="slider__body">
+                   <div class="slider__icon">
+                       <%- include('../../images/block.svg')%>
+                   </div>
+                   <div class="slider__text">Результат -
+                       новый блок</div>
+               </div>
+               <div class="slider__arrow">
+                   <%- include('../../images/arrow-right.svg')%>
+               </div>
+           </li>
+           <li style="min-width: 250px;" class="slider__item">
+               <div class="slider__body">
+                   <div class="slider__icon">
+                       <%- include('../../images/earth.svg')%>
+                   </div>
+                   <div class="slider__text">Ноды сети находят и подтверждают
+                       новую транзакцию, добавляя её
+                       в блок транзакций</div>
                </div>
                <div class="slider__arrow">
                    <%- include('../../images/arrow-right.svg')%>
@@ -31,9 +71,23 @@
            <li class="slider__item">
                <div class="slider__body">
                    <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
+                       <%- include('../../images/blocks.svg')%>
                    </div>
-                   <div class="slider__text">Пользователь</div>
+                   <div class="slider__text">Сеть достигает консенсуса
+                       по текущей цепочке блоков </div>
+               </div>
+               <div class="slider__arrow">
+                   <%- include('../../images/arrow-right.svg')%>
+               </div>
+           </li>
+           <li style="min-width: 320px;" class="slider__item">
+               <div class="slider__body">
+                   <div class="slider__icon">
+                       <%- include('../../images/wallet.svg')%>
+                   </div>
+                   <div class="slider__text">
+                       Пользователь осуществляет  контроль над своим биткоин-кошельком, в котором хранятся закрытые ключи
+                   </div>
                </div>
                <div class="slider__arrow">
                    <%- include('../../images/arrow-right.svg')%>
@@ -42,45 +96,26 @@
            <li class="slider__item">
                <div class="slider__body">
                    <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
+                       <%- include('../../images/keys.svg')%>
                    </div>
-                   <div class="slider__text">Пользователь</div>
+                   <div class="slider__text">
+                       Закрытые ключи обеспечивают
+                       безопасность транзакции
+                   </div>
                </div>
                <div class="slider__arrow">
                    <%- include('../../images/arrow-right.svg')%>
                </div>
            </li>
-           <li class="slider__item">
+           <li style="min-width: 265px;" class="slider__item">
                <div class="slider__body">
                    <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
+                       <%- include('../../images/change.svg')%>
                    </div>
-                   <div class="slider__text">Пользователь</div>
-               </div>
-               <div class="slider__arrow">
-                   <%- include('../../images/arrow-right.svg')%>
-               </div>
-           </li>
-           <li class="slider__item">
-               <div class="slider__body">
-                   <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
+                   <div class="slider__text">
+                       Пользователь может обменять
+                       биткоин на фиатные деньги, товары или услуги
                    </div>
-                   <div class="slider__text">Пользователь</div>
-               </div>
-               <div class="slider__arrow">
-                   <%- include('../../images/arrow-right.svg')%>
-               </div>
-           </li>
-           <li class="slider__item">
-               <div class="slider__body">
-                   <div class="slider__icon">
-                       <%- include('../../images/person.svg')%>
-                   </div>
-                   <div class="slider__text">Пользователь</div>
-               </div>
-               <div class="slider__arrow">
-                   <%- include('../../images/arrow-right.svg')%>
                </div>
            </li>
         </ul>

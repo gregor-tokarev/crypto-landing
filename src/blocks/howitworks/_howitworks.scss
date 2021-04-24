@@ -1,0 +1,46 @@
+.how-it-works {
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: 100px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    flex-shrink: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+  }
+
+  &__icon {
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 132.4%;
+    color: $text;
+    letter-spacing: 0.01em;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 132.4%;
+    color: $label;
+    letter-spacing: 0.045em;
+  }
+}

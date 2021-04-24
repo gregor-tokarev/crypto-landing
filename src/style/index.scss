@@ -5,9 +5,14 @@ body {
   background-color: $bg;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 //blocks
 @import "../blocks/header/header";
 @import "../blocks/hero/hero";
+@import "../blocks/howitworks/howitworks";
 @import "../blocks/title/title";
 @import "../blocks/timeline/timeline";
 @import "../blocks/slider/slider";
