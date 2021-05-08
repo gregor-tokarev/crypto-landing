@@ -8,7 +8,7 @@ const animation = gsap.to('.slider__slider', {
 ScrollTrigger.create({
     animation,
     trigger: '.slider',
-    scrub: 0.2,
+    scrub: 0.08,
     toggleActions: 'play none none reverse',
     pin: '.slider',
     start: 'center center'
