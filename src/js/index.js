@@ -23,3 +23,5 @@ animatedElements.forEach(el => {
         toggleActions: 'play none none none'
     });
 });
+
+const lazy = new LazyLoad({})

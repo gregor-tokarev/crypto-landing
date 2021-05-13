@@ -1,6 +1,6 @@
 .perspectives {
   margin-bottom: 70px;
-  background: $bg url("../../images/net.png") no-repeat center/cover;
+  background: $bg no-repeat center/cover;
 
   &__inner {
     @include container;
