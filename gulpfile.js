@@ -63,7 +63,7 @@ const path = {
         html: `${ sourceFolder }/*.ejs`,
         style: [`${ sourceFolder }/style/**/*.scss`, `${ sourceFolder }/blocks/**/*.scss`],
         script: `${ sourceFolder }/js/index.js`,
-        img: `${ sourceFolder }/images/**/*.{jpeg,png,gif,svg,webp}`,
+        img: `${ sourceFolder }/images/**/*.{jpeg,png,gif,svg,webp,jpg}`,
         icons: `${ sourceFolder }/images/icons/*.svg`,
         favicons: `${ sourceFolder }/favicon.png`,
         fonts: `${ sourceFolder }/fonts/**/*.*`

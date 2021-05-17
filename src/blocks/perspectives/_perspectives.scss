@@ -1,6 +1,9 @@
 .perspectives {
   margin-bottom: 70px;
-  background: $bg no-repeat center/cover;
+  background-color: $bg;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 0 300px;
+  background-size: cover, cover;
 
   &__inner {
     @include container;
