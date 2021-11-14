@@ -142,8 +142,6 @@ function htmlProduction() {
         .pipe(replace(/(\.\.\/)+/g, ''))
         .pipe(htmlWebp())
         .pipe(htmlMin({ collapseWhitespace: true }))
-        .pipe(replace('.css', '.min.css'))
-        .pipe(replace('.js', '.min.js'))
         .pipe(dest(path.build.html));
 }
 
@@ -183,9 +181,6 @@ function styleProduction() {
             html: ['./dist/*.html'],
             ignore: [/.show/, /.hidden/, /.visible/, /.finished/, /.close/, /.active/, /.open/]
         }))
-        .pipe(rename({
-            suffix: '.min'
-        }))
         .pipe(styleWebp({}))
         .pipe(dest(path.build.style));
 }
@@ -203,9 +198,6 @@ function scriptDevelopment() {
 function scriptProduction() {
     return src(path.src.script)
         .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(rename({
-            suffix: '.min'
-        }))
         .pipe(dest(path.build.script));
 }
 
@@ -297,7 +289,7 @@ if (!production) {
         faviconsDevelopment
     );
     const watcher = parallel(watchDevelopment, browserSyncDevelopment, build);
-    
+
     exports.lint = series(styleLinter, scriptLinter);
     exports.build = build;
     exports.watch = watcher;
@@ -311,7 +303,7 @@ if (!production) {
         fontsProduction,
         faviconsProduction
     );
-    
+
     exports.lint = series(styleLinter, scriptLinter);
     exports.build = build;
 }
