@@ -25,19 +25,21 @@ Promise.all([
         }
     };
     for (const value of newArray) {
-        currencyObj[ value.name ] = { price: value.price };
+        currencyObj[value.name] = { price: value.price };
     }
+    console.log(currencyObj);
     currencyObj.Bitcoin.description = 'Bitcoin - эталон и первопроходец в мире криптовалют. Лидирует по капитализации, задает темп другим валютам.';
     currencyObj.Ethereum.description = 'Ethereum - вторая по капитализации валюта. В ней была впервые реализована идея smart-контрактов. Это контракты, написанные программным кодом и хранящиеся внутри блокчейна. Позволяют быть более независимым от создателя, отслеживаемее и необратимее.';
     currencyObj.Litecoin.description = 'Litecoin - криптовалюта, славящаяся быстротой своих транзакций. Мгновенные переводы с минимальной комиссией. Сделан на основе bitcoin’а.';
-    currencyObj['Binance Coin'].description = 'Bnb(Binance Coin) - криптовалюта биржи Binances';
+    currencyObj.BNB.description = 'Bnb(Binance Coin) - криптовалюта биржи Binances';
     setCurrency(currencyObj.Bitcoin);
-    
+
     const icons = document.querySelectorAll('.rate__currency');
     icons.forEach(icon => {
         icon.addEventListener('click', event => {
             const fieldName = icon.dataset.currency;
-            setCurrency(currencyObj[ fieldName ]);
+            console.log(fieldName);
+            setCurrency(currencyObj[fieldName]);
         });
     });
 });
@@ -45,7 +47,7 @@ Promise.all([
 function setCurrency(currency) {
     const priceEl = document.querySelector('.rate__number');
     priceEl.textContent = currency.price;
-    
+
     const descriptionEl = document.querySelector('.rate__description')
     descriptionEl.innerHTML = currency.description
 }
